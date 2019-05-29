@@ -2,6 +2,9 @@
 1. requires sepcifiying homepath.
 
 ## 2. pylucence based title content searching
+Run the pylucence based searching. Save result as xxx.pkl to intermidate_filepath. 
+
+Takes about {} from the scratch.
 
 ```
 """
@@ -16,8 +19,6 @@ Options:
 """
 python pylucene-title-content-based.py --help
 
-# Run the pylucence based searching. Save result as xxx.pkl to intermidate_filepath. 
-# Takes about {} from the scratch.
 python pylucene-title-content-based.py --firsttime=True --dataset_type='devset' --k=100
 
 # evaluate the result from pylucence 
