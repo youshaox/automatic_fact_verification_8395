@@ -35,6 +35,14 @@ python evaluate.py --filepath='/home/ubuntu/workspace/codelab/intermediate_data/
 ## 3.1 Baseline (TF-IDF based filter)
 
 ## 3.2 Sentence selection model (Using BERT)
+### 3.2.1 generate training data
+####  Training
+Task: Classify wether the claim and sentence is related (1) or not related (0).
+Input: [claim, sentence, 0/1]
+output: [prob_not_related, prob_related]
+We generate the 
+
+### 3.2.2 classification
 
 # 4. Recognizing (BERT)
 
