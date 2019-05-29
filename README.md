@@ -1,7 +1,8 @@
-# automatic_fact_verification
-requires sepcifiying homepath.
-requires tensorflow, BERT and Pylucene, Sklearn.
-# 1. prepare and preprocess the data
+# Automatic Fact Verification
+1. requires sepcifiying homepath.
+2. requires tensorflow, BERT and Pylucene, Sklearn.
+
+# 1. Preprocess the data
 automatic_fact_verification_8395/prepare.py
 
 # 2. Document Retrieval
@@ -23,6 +24,9 @@ evaluate the result from pylucence
 
 python evaluate.py --filepath='/home/ubuntu/workspace/codelab/intermediate_data/'
 # 3. Sentence selection
+
+Additionally, for Pylucene results, we remove the wiki titles which does not have word appeared in the claim.
+
 ## 3.1 Baseline (TF-IDF based filter)
 automatic_fact_verification_8395/main.ipynb
 
