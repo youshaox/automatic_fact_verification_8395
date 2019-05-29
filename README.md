@@ -1,4 +1,4 @@
-# automatic_fact_verification_1st
+# automatic_fact_verification
 1. requires sepcifiying homepath.
 
 # 1. prepare and preprocess the data
