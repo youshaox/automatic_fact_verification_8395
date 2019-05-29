@@ -1,6 +1,5 @@
 # automatic_fact_verification_1st
-
-
+1. requires sepcifiying homepath.
 
 ## 2. pylucence based title content searching
 
@@ -16,5 +15,14 @@ Options:
   --help               Show this message and exit.
 """
 python pylucene-title-content-based.py --help
-python pylucene-title-content-based.py --firsttime=True --dataset_type='devset'
+
+# Run the pylucence based searching. Save result as xxx.pkl to intermidate_filepath. 
+# Takes about {} from the scratch.
+python pylucene-title-content-based.py --firsttime=True --dataset_type='devset' --k=100
+
+# evaluate the result from pylucence 
+python evaluate.py
 ```
+
+
+## evaluate.py
