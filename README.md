@@ -22,8 +22,5 @@ python pylucene-title-content-based.py --help
 python pylucene-title-content-based.py --firsttime=True --dataset_type='devset' --k=100
 
 # evaluate the result from pylucence 
-python evaluate.py
+python evaluate.py --filepath='/home/ubuntu/workspace/codelab/intermediate_data/'
 ```
-
-
-## evaluate.py
