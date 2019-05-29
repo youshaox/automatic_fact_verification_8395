@@ -1,4 +1,4 @@
-automatic_fact_verification_1st
+# automatic_fact_verification_1st
 1. requires sepcifiying homepath.
 
 # 1. prepare and preprocess the data
@@ -12,7 +12,7 @@ Run the pylucence based searching. Save result as xxx.pkl to intermidate_filepat
 
 Takes about {} from the scratch.
 
-```python
+```shell
 """
 Usage: pylucene-title-content-based.py [OPTIONS]
 
