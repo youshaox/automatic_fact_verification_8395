@@ -1,4 +1,4 @@
-# Automatic Fact Verification
+# Automatic Fact Verification - FEVER
 1. requires sepcifiying homepath.
 2. requires tensorflow, BERT and Pylucene, Sklearn.
 
