@@ -1,26 +1,18 @@
 # automatic_fact_verification
 1. requires sepcifiying homepath.
+2. requires tensorflow, BERT and Pylucene, Sklearn.
 
 # 1. prepare and preprocess the data
-For the preprocessing, it is divided into preprocess the title and the claim/sentences.
-
-1. title: 
-* we normalise using NFC to solve the encoding problem. Otherwise, we will expect some encoding and decoding problem even if they are reference to the same string. For example, 
-
-* we replace the '–', '-' in the title to ensure the consistency.
-
-* we replace the "_" with the whitespace.
-
-2. sentences
-
+automatic_fact_verification_8395/prepare.py
 
 # 2. Document Retrieval
 ## 2.1 Title-based tree
+automatic_fact_verification_8395/main.ipynb
 
 ## 2.2 pylucence based title content searching
-Run the pylucence based searching. Save result as xxx.pkl to intermidate_filepath. 
+automatic_fact_verification_8395/pylucene/pylucene-title-content-based.py
 
-Takes about {} from the scratch.
+Run the pylucence based searching. Save result as xxx.pkl to intermidate_filepath. 
 
 ```shell
 """
@@ -45,28 +37,12 @@ python evaluate.py --filepath='/home/ubuntu/workspace/codelab/intermediate_data/
 ## 3.1 Baseline (TF-IDF based filter)
 
 ## 3.2 Sentence selection model (Using BERT)
-### 3.2.1 generate training data
-####  Training
-Task: Classify wether the claim and sentence is related (1) or not related (0).
-Input: [claim, sentence, 0/1]
-output: [prob_not_related, prob_related]
-We generate the training data
-#### preidction
-
-### 3.2.2 classification
-
+The training and prediction scripts of BERT is in automatic_fact_verification_8395/bert/RUN_BERT.ipynb
 # 4. Recognizing (BERT)
-####  Training
-Task: Classify wether the claim and sentence is related (1) or not related (0).
-Input: [claim, sentence, 0/1]
-output: [prob_not_related, prob_related]
-We generate the 
-#### preidction
-
-
+The training and prediction scripts of BERT is in automatic_fact_verification_8395/bert/RUN_BERT.ipynb
 
 ## 4.1 Baseline (BOW + Random Forest classifier)
-```shell
+in automatic_fact_verification_8395/backup/bow-RandomForest.ipynb.
 
-```
-## 4.2 classification using BERT
+## 4.2 classification and prediction using BERT
+The training and prediction scripts of BERT is in automatic_fact_verification_8395/bert/RUN_BERT.ipynb
