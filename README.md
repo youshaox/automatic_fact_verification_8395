@@ -32,11 +32,14 @@ python evaluate.py --filepath='/home/ubuntu/workspace/codelab/intermediate_data/
 ```
 
 # 3. Sentence selection
-## 3.1 TF-IDF based filter
+## 3.1 Baseline (TF-IDF based filter)
 
-## 3.2 Sentence selection model (BERT)
+## 3.2 Sentence selection model (Using BERT)
 
 # 4. Recognizing (BERT)
+
+## 4.1 Baseline (BOW + Random Forest classifier)
 ```shell
 
 ```
+## 4.2 classification using BERT
