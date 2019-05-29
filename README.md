@@ -40,11 +40,20 @@ python evaluate.py --filepath='/home/ubuntu/workspace/codelab/intermediate_data/
 Task: Classify wether the claim and sentence is related (1) or not related (0).
 Input: [claim, sentence, 0/1]
 output: [prob_not_related, prob_related]
-We generate the 
+We generate the training data
+#### preidction
 
 ### 3.2.2 classification
 
 # 4. Recognizing (BERT)
+####  Training
+Task: Classify wether the claim and sentence is related (1) or not related (0).
+Input: [claim, sentence, 0/1]
+output: [prob_not_related, prob_related]
+We generate the 
+#### preidction
+
+
 
 ## 4.1 Baseline (BOW + Random Forest classifier)
 ```shell
