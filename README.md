@@ -7,6 +7,7 @@
 python automatic_fact_verification_8395/prepare.py
 ```
 # 2. Document Retrieval
+**Important assumpation: the wiki titles are the entities themselves.**
 ## 2.1 Title-based tree (IMPORTANT)
 ```
 automatic_fact_verification_8395/main.ipynb
