@@ -2,7 +2,17 @@
 1. requires sepcifiying homepath.
 
 # 1. prepare and preprocess the data
-python prepare.py
+For the preprocessing, it is divided into preprocess the title and the claim/sentences.
+
+1. title: 
+* we normalise using NFC to solve the encoding problem. Otherwise, we will expect some encoding and decoding problem even if they are reference to the same string. For example, 
+
+* we replace the '–', '-' in the title to ensure the consistency.
+
+* we replace the "_" with the whitespace.
+
+2. sentences
+
 
 # 2. Document Retrieval
 ## 2.1 Title-based tree
