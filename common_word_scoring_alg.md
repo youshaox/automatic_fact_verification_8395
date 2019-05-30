@@ -12,7 +12,7 @@
 
    For example, claim "I went to the Melbourne University in Australia." will be {I, went, to, the, University, of, Melbourne, in, Australia, .}.
 
-   2. I -> posting list1, went -> posting list2, …., Australia -> posting list9.
+   2. I -> posting list1, went -> posting list2, …., Australia -> posting list9. (May disregard the stop words!)
 
 4. Scoring based on all the wiki titles in the posting list with respect to the claim "I went to the University of Melbourne in Australia." (**The usage of title based inverted index avods us to search all the wiki titles**)
 
